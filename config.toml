@@ -2,6 +2,7 @@ base_url = "https://tsai002.github.io/"
 title = "Ciao!"
 minify_html = true
 generate_feed = true
+feed_limit = 20
 
 [markdown]
 highlight_code = true
