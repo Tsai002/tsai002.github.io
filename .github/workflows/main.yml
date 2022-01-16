@@ -11,7 +11,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@master
       - name: 'Build only' 
-        uses: shalzz/zola-deploy-action@master
+        uses: shalzz/zola-deploy-action@no-pat
         env:
           BUILD_DIR: .
           TOKEN: $GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}
@@ -23,7 +23,7 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@master
       - name: 'Build and deploy'
-        uses: shalzz/zola-deploy-action@master
+        uses: shalzz/zola-deploy-action@no-pat
         env:
           PAGES_BRANCH: gh-pages
           BUILD_DIR: .
