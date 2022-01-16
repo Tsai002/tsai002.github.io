@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ config.title }}</title>
+  <link rel="stylesheet" href="{{ get_url(path="simple-min.css", trailing_slash=false) }}">
+  <link rel="shortcut icon" href="/images/t.jpg">
+  <link rel="alternate" type="application/atom+xml" title="Ciao!" href="{{ config.base_url }}/atom.xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h3>Ciao!</h3>
+
+      <p>“When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create.”</p>
+      <p>― Why The Lucky Stiff</p>
+
+      <br>
+
+      <a href="https://mastodon.xyz/@ciao"><img src="/images/mastodon.svg" alt="mastodon" height="32" width="32"></a>
+      <a href="https://github.com/Tsai002"><img src="/images/github-tile.svg" alt="github" height="32" width="32"></a>
+      <a href="https://www.douban.com/people/140156069/"><img src="/images/douban.svg" alt="douban" height="32" width="32"></a>
+      <a href="mailto:tsai2049@gmail.com"><img src="/images/mail.svg" alt="mail" height="32" width="32"></a>
+      <a href="atom.xml"><img src="/images/rss_feed.svg" alt="RSS" height="32" width="32"></a>
+
+    </header>
+
+    <section>
+
+      {% block content %}
+          <br>
+        {% for page in section.pages %}
+          {{ page.date | date(format="%Y-%m-%d") }}<br>
+          <a href="{{ page.permalink }}">{{ page.title }}</a><br>
+          <br>
+        {% endfor %}
+      {% endblock content %}
+
+    </section>
+
+</body>
+
+</html>
