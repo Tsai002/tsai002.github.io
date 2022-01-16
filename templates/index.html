@@ -1,16 +1,5 @@
-<!doctype html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>{{ config.title }}</title>
-  <link rel="stylesheet" href="{{ get_url(path="simple-min.css", trailing_slash=false) }}">
-  <link rel="shortcut icon" href="/images/t.jpg">
-  <link rel="alternate" type="application/atom+xml" title="Ciao!" href="{{ config.base_url }}/atom.xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-</head>
-
-<body>
+{% extends "base.html" %}
+{% block content %}
 
   <div class="wrapper">
     <header>
@@ -31,17 +20,14 @@
 
     <section>
 
-      {% block content %}
           <br>
         {% for page in section.pages %}
           {{ page.date | date(format="%Y-%m-%d") }}<br>
-          <a href="{{ page.permalink }}">{{ page.title }}</a><br>
+          <a href="{{ page.permalink | safe }}">{{ page.title }}</a><br>
           <br>
         {% endfor %}
-      {% endblock content %}
 
     </section>
+  </div>
 
-</body>
-
-</html>
+{% endblock content %}
