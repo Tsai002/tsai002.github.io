@@ -1,0 +1,81 @@
+<!doctype html><html><head><meta charset=utf-8><title>Ciao!</title><link href=https://tsai002.github.io/simple-min.css rel=stylesheet><link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACjUlEQVQ4T0VTTU9TQRQ9r61RkY1SEqFBFyAN6UcQWsUmNTUqDQE0Kh+GdictG4SnbGwTWZSFuuui/ARRFLSuEQhxKW4kQZsuQCFVdriwbWp8z3tnpnXy3mTevDv3nnPuGc0wDFPTNPAw6dVoNnkh1rRPj/ikTdMwUKn8Ef/+0tp2xAbNNEwRLw7SXPhRwPLSEtpa23Dhoh8N9kaVVCYr/i5ie3sbPp+PvukEZeVzosyLxZeYiMWh6zo6XC6USyVYrRZoFgtVruDg5wFyuRwy8/Oor68XqDSDIMDUsL+/B6ezHSdPNSAUCqHRbseb5WX09oYRCARQKpextr4KV4cLY5ExinUSAiJpCg4a0uk0FhaeI5Waw+anj9j6vIWVlffo7urC8MgI+vv7kM1m8WrxNVbX12CzWgXwGoKZmYfweDwIBoPEv1WoouvTGBgYxLXrV7G7s4tkMolMJiNQsmZCaEbAFGZnH+NebBxnWs7Wfk5NTyESjaLpdBPy+TxRuyI0kW2SomqkoUiVffcW/m4/HC2OqqaYiMcxOXkfXq9X9ogKqbLV+oyAB1AqFon7JlG4LDJzRGx8HPoDHS7qiNyqzkRAxdQocE+/fM3Bea4dFoZJIxKJIpF4BJdbJpB+YnsxHsWCfUBWZCgKnqzEQbdu38FcKqUQKLdSIVleAhUa1IysbCssTHHhvjCePXmKzvOdCr7AIBPwI41ECYSoEsHGxgdh0xN1dei51IMEte7mjUF1IZThOT9TYSvLy6QuEm0e/jrE6N1RFAoFfP+2J7wwNDQMt9stuTPd6oUT1PkuSGBKfQ1kbzLODpqbHTh+7GhNcbbufw9IL6g2KmOo7spuMcSq8mx7vuaCuNJA+uIfurIzt19ASrYAAAAASUVORK5CYII=" rel="shortcut icon"><link href=https://tsai002.github.io//atom.xml rel=alternate title=Ciao! type=application/atom+xml><meta content="width=device-width,initial-scale=1,user-scalable=no" name=viewport><body><div class=blogpost><a href=/>← Home</a><h2 class=post-title>用R语言批量下载落网音乐</h2><p>觉得 <a href=http://www.luoo.net/>落网</a> 的音乐很不错，正好又在学习 R语言的爬虫，顺便就写了一个批量下载脚本。<pre class=language-r data-lang=r style=background-color:#2b303b;color:#c0c5ce;><code class=language-r data-lang=r><span style=color:#65737e;>## 首先加载 R包
+</span><span style=color:#96b5b4;>library</span><span>(RCurl)
+</span><span style=color:#96b5b4;>library</span><span>(rvest)
+</span></code></pre><h4 id=1-xia-zai-luo-wang-de-qi-kan>1.下载落网的期刊</h4><p><a href=http://www.luoo.net/music/>http://www.luoo.net/music/</a><pre class=language-r data-lang=r style=background-color:#2b303b;color:#c0c5ce;><code class=language-r data-lang=r><span style=color:#65737e;>## 下载函数
+</span><span style=color:#8fa1b3;>Luo_Volume </span><span>&LT- </span><span style=color:#b48ead;>function</span><span>(</span><span style=color:#bf616a;>Volume</span><span>){
+</span><span>
+</span><span>    V_url &LT- </span><span style=color:#bf616a;>read_html</span><span>(</span><span style=color:#96b5b4;>paste</span><span>("</span><span style=color:#a3be8c;>http://www.luoo.net/music/</span><span>", Volume, </span><span style=color:#bf616a;>sep </span><span>= ""))
+</span><span>    Title &LT- </span><span style=color:#bf616a;>html_text</span><span>(</span><span style=color:#bf616a;>html_nodes</span><span>(V_url, "</span><span style=color:#a3be8c;>a.trackname.btn-play</span><span>"))
+</span><span>    ID &LT- </span><span style=color:#96b5b4;>substr</span><span>(Title, </span><span style=color:#d08770;>1</span><span>, </span><span style=color:#d08770;>2</span><span>)
+</span><span>
+</span><span>    j &LT- </span><span style=color:#d08770;>1
+</span><span>    </span><span style=color:#b48ead;>for </span><span>(i in ID){
+</span><span>        Song_URL &LT- </span><span style=color:#96b5b4;>paste</span><span>("</span><span style=color:#a3be8c;>http://luoo-mp3.kssws.ks-cdn.com/low/luoo/radio801/</span><span>",
+</span><span>                          i, "</span><span style=color:#a3be8c;>.mp3</span><span>", </span><span style=color:#bf616a;>sep </span><span>= "")
+</span><span>        Song &LT- </span><span style=color:#bf616a;>getURLContent</span><span>(Song_URL)
+</span><span>        Name &LT- </span><span style=color:#96b5b4;>paste</span><span>(Volume, "</span><span style=color:#a3be8c;>-</span><span>", Title[j], "</span><span style=color:#a3be8c;>.mp3</span><span>", </span><span style=color:#bf616a;>sep </span><span>= "")
+</span><span>        </span><span style=color:#96b5b4;>save</span><span>(Song, </span><span style=color:#bf616a;>file </span><span>= Name, </span><span style=color:#bf616a;>compress </span><span>= F)
+</span><span>        j &LT- j + </span><span style=color:#d08770;>1
+</span><span>
+</span><span>        </span><span style=color:#65737e;>## 随机休眠 2-8 秒，防止反爬虫，可以注释掉
+</span><span>        Sleep &LT- </span><span style=color:#96b5b4;>sample</span><span>(</span><span style=color:#d08770;>2</span><span style=color:#b48ead;>:</span><span style=color:#d08770;>8</span><span>, </span><span style=color:#d08770;>1</span><span>)
+</span><span>        </span><span style=color:#96b5b4;>Sys.sleep</span><span>(Sleep)
+</span><span>
+</span><span>        </span><span style=color:#96b5b4;>print</span><span>(</span><span style=color:#96b5b4;>c</span><span>(Name, </span><span style=color:#96b5b4;>paste</span><span>("</span><span style=color:#a3be8c;>Wait</span><span>", Sleep, "</span><span style=color:#a3be8c;>seconds</span><span>")))
+</span><span>    }
+</span><span>}
+</span><span>
+</span><span style=color:#65737e;>## 大展伸手的时候到了！
+</span><span style=color:#65737e;>### 下载单个期刊，如，801期，http://www.luoo.net/music/801
+</span><span style=color:#bf616a;>Luo_Volume</span><span>(</span><span style=color:#d08770;>801</span><span>)
+</span><span style=color:#65737e;>### 同时下载多个期刊，如 800 到 811，直接
+</span><span style=color:#b48ead;>for </span><span>(i in </span><span style=color:#d08770;>800</span><span style=color:#b48ead;>:</span><span style=color:#d08770;>811</span><span>){</span><span style=color:#bf616a;>Luo_Volume</span><span>(i)}
+</span></code></pre><h4 id=2-xia-zai-tui-jian-de-dan-qu>2.下载推荐的单曲</h4><p><a href=http://www.luoo.net/musician/>http://www.luoo.net/musician/</a><p>注：某些特殊后缀资源不能下载，如 <a href=http://luoo-mp3.kssws.ks-cdn.com/low/2014/0506_01.mp3>http://luoo-mp3.kssws.ks-cdn.com/low/2014/0506_01.mp3</a><pre class=language-r data-lang=r style=background-color:#2b303b;color:#c0c5ce;><code class=language-r data-lang=r><span style=color:#65737e;>## 首先生成每日推荐的 ID
+</span><span style=color:#8fa1b3;>DayID </span><span>&LT- </span><span style=color:#b48ead;>function</span><span>(</span><span style=color:#bf616a;>Start </span><span>= "</span><span style=color:#a3be8c;>2014-06-05</span><span>", </span><span style=color:#bf616a;>End </span><span>= </span><span style=color:#96b5b4;>Sys.Date</span><span>()){
+</span><span>    S &LT- </span><span style=color:#96b5b4;>as.Date</span><span>(Start)
+</span><span>    E &LT- </span><span style=color:#96b5b4;>as.Date</span><span>(End)
+</span><span>    Total_days &LT- E - S
+</span><span>
+</span><span>    ID &LT- </span><span style=color:#96b5b4;>vector</span><span>(</span><span style=color:#bf616a;>length </span><span>= Total_days)
+</span><span>    </span><span style=color:#b48ead;>for </span><span>(i in </span><span style=color:#d08770;>1</span><span style=color:#b48ead;>:</span><span>Total_days){
+</span><span>        ID[i] &LT- </span><span style=color:#96b5b4;>format</span><span>(S + i, "</span><span style=color:#a3be8c;>%Y%m%d</span><span>")
+</span><span>    }
+</span><span>
+</span><span>    ID &LT- </span><span style=color:#96b5b4;>as.numeric</span><span>(ID)
+</span><span>}
+</span><span>
+</span><span style=color:#65737e;>## 下载函数
+</span><span style=color:#8fa1b3;>Download </span><span>&LT- </span><span style=color:#b48ead;>function</span><span>(</span><span style=color:#bf616a;>ID</span><span>){
+</span><span>    </span><span style=color:#b48ead;>for </span><span>(i in ID){
+</span><span>        Song_URL &LT- </span><span style=color:#96b5b4;>paste</span><span>("</span><span style=color:#a3be8c;>http://luoo-mp3.kssws.ks-cdn.com/low/chinese/</span><span>",
+</span><span>            i, "</span><span style=color:#a3be8c;>.mp3</span><span>", </span><span style=color:#bf616a;>sep </span><span>= "")
+</span><span>        Song &LT- </span><span style=color:#bf616a;>getURLContent</span><span>(Song_URL)
+</span><span>        Name &LT- </span><span style=color:#96b5b4;>paste</span><span>(i, "</span><span style=color:#a3be8c;>.mp3</span><span>", </span><span style=color:#bf616a;>sep </span><span>= "")
+</span><span>
+</span><span>        </span><span style=color:#b48ead;>if </span><span>(</span><span style=color:#96b5b4;>object.size</span><span>(Song) > </span><span style=color:#d08770;>100</span><span>) {
+</span><span>            </span><span style=color:#96b5b4;>save</span><span>(Song, </span><span style=color:#bf616a;>file </span><span>= Name, </span><span style=color:#bf616a;>compress </span><span>= F)
+</span><span>            </span><span style=color:#65737e;>## 随机休眠 2-8 秒，防止反爬虫，可以注释掉
+</span><span>            Sleep &LT- </span><span style=color:#96b5b4;>sample</span><span>(</span><span style=color:#d08770;>2</span><span style=color:#b48ead;>:</span><span style=color:#d08770;>8</span><span>, </span><span style=color:#d08770;>1</span><span>)
+</span><span>            </span><span style=color:#96b5b4;>print</span><span>(</span><span style=color:#96b5b4;>c</span><span>(Name, </span><span style=color:#96b5b4;>paste</span><span>("</span><span style=color:#a3be8c;>Wait</span><span>", Sleep, "</span><span style=color:#a3be8c;>seconds</span><span>")))
+</span><span>            </span><span style=color:#96b5b4;>Sys.sleep</span><span>(Sleep)
+</span><span>        }
+</span><span>    }
+</span><span>}
+</span><span>
+</span><span style=color:#65737e;>## 使用方法
+</span><span style=color:#65737e;>### 自选指定日的推荐曲目
+</span><span>ID &LT- </span><span style=color:#d08770;>20160201
+</span><span style=color:#bf616a;>Download</span><span>(ID)
+</span><span>
+</span><span style=color:#65737e;>### 多个日期，如二月和三月，月份之间用分号隔开
+</span><span>ID &LT- </span><span style=color:#96b5b4;>c</span><span>(</span><span style=color:#d08770;>20160201</span><span style=color:#b48ead;>:</span><span style=color:#d08770;>20160229</span><span>, </span><span style=color:#d08770;>20160301</span><span style=color:#b48ead;>:</span><span style=color:#d08770;>20160331</span><span>)
+</span><span style=color:#bf616a;>Download</span><span>(ID)
+</span><span>
+</span><span style=color:#65737e;>### 选择起止日期，下载两个日期之间的全部推荐单曲，如 2015-01-01 到 2015-01-10 之间
+</span><span>ID &LT- </span><span style=color:#bf616a;>DayID</span><span>("</span><span style=color:#a3be8c;>2015-01-01</span><span>", "</span><span style=color:#a3be8c;>2015-01-10</span><span>");
+</span><span style=color:#bf616a;>Download</span><span>(ID)
+</span><span>
+</span><span style=color:#65737e;>### 丧心病狂模式，下载所有日期里的推荐曲目
+</span><span>ID &LT- </span><span style=color:#bf616a;>DayID</span><span>()
+</span><span style=color:#bf616a;>Download</span><span>(ID)
+</span></code></pre></div>
