@@ -6,3 +6,5 @@
 
 
 个人博客 <https://tsai002.github.io>，fork 自大神 [Nicole White](https://github.com/nicolewhite/nicolewhite.github.io_old)。
+
+喜欢的话，请使用模板 [nodep](https://github.com/Tsai002/nodep)
