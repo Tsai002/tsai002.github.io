@@ -1,6 +1,5 @@
 +++
-title = "【译】如何摧毁去中心化网络（例如联邦网络）
-"
+title = "【译】如何摧毁去中心化网络（例如联邦网络）"
 +++
 
 > 原文：How to Kill a Decentralised Network (such as the Fediverse)
