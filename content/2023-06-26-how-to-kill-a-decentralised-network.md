@@ -10,9 +10,10 @@ title = "【译】如何摧毁去中心化网络（例如联邦网络）"
 > 
 > 日期：2023年6月23日
 
-![Meta: "MAY I JOIN YOU?"](https://stockage.framapiaf.org/framapiaf/media_attachments/files/110/583/215/225/403/266/original/7abd28f529cbb631.jpeg)
-
-题图来源：David Revoy <https://framapiaf.org/@davidrevoy/110583258129951932>
+<figure>
+  <img alt="Meta: "MAY I JOIN YOU?" src="https://stockage.framapiaf.org/framapiaf/media_attachments/files/110/583/215/225/403/266/original/7abd28f529cbb631.jpeg" />
+  <figcaption>Meta: "MAY I JOIN YOU?" by <a href="https://framapiaf.org/@davidrevoy/110583258129951932">David Revoy</a></figcaption>
+</figure>
 
 2023年了，整个互联网都在 GAFAM（Google，Apple，Facebook，Amazon 和 Microsoft） 帝国的掌控之下。全部吗？不是。因为有一些小部落还在抵抗，并且其中一些部落开始聚集，形成了“联邦网络”（Fediverse）。
 
