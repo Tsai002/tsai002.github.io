@@ -93,4 +93,4 @@ Glyn Moody 在他的《叛逆代码》（"Rebel Code"）一书中披露了这一
 
 作为一名写作者和工程师，我喜欢探索技术如何影响社会。您可以通过 [电子邮件](https://listes.ploum.net/mailman3/postorius/lists/en.listes.ploum.net/) 或 [RSS](https://ploum.net/atom_en.xml) 订阅我的文章。我珍视隐私，不会泄露您的地址。
 
-如果您能阅读法语，您可以通过购买/分享/阅读我的 [书籍](https://ploum.net/livres.html) 和订阅我的法语 [newsletter](https://listes.ploum.net/mailman3/postorius/lists/fr.listes.ploum.net/) 或 [RSS](https://ploum.net/atom_fr.xml) 中的新闻通讯来支持我。我也开发 [自由软件](https://ploum.net/software.html)。
+如果您能阅读法语，您可以通过购买/分享/阅读我的 [书籍](https://ploum.net/livres.html) 和订阅我的法语 [newsletter](https://listes.ploum.net/mailman3/postorius/lists/fr.listes.ploum.net/) 或 [RSS](https://ploum.net/atom_fr.xml) 来支持我。我也开发 [自由软件](https://ploum.net/software.html)。
