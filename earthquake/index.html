@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset=utf-8><title>Ciao!</title><link href=https://tsai002.github.io/simple-min.css rel=stylesheet><link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACjUlEQVQ4T0VTTU9TQRQ9r61RkY1SEqFBFyAN6UcQWsUmNTUqDQE0Kh+GdictG4SnbGwTWZSFuuui/ARRFLSuEQhxKW4kQZsuQCFVdriwbWp8z3tnpnXy3mTevDv3nnPuGc0wDFPTNPAw6dVoNnkh1rRPj/ikTdMwUKn8Ef/+0tp2xAbNNEwRLw7SXPhRwPLSEtpa23Dhoh8N9kaVVCYr/i5ie3sbPp+PvukEZeVzosyLxZeYiMWh6zo6XC6USyVYrRZoFgtVruDg5wFyuRwy8/Oor68XqDSDIMDUsL+/B6ezHSdPNSAUCqHRbseb5WX09oYRCARQKpextr4KV4cLY5ExinUSAiJpCg4a0uk0FhaeI5Waw+anj9j6vIWVlffo7urC8MgI+vv7kM1m8WrxNVbX12CzWgXwGoKZmYfweDwIBoPEv1WoouvTGBgYxLXrV7G7s4tkMolMJiNQsmZCaEbAFGZnH+NebBxnWs7Wfk5NTyESjaLpdBPy+TxRuyI0kW2SomqkoUiVffcW/m4/HC2OqqaYiMcxOXkfXq9X9ogKqbLV+oyAB1AqFon7JlG4LDJzRGx8HPoDHS7qiNyqzkRAxdQocE+/fM3Bea4dFoZJIxKJIpF4BJdbJpB+YnsxHsWCfUBWZCgKnqzEQbdu38FcKqUQKLdSIVleAhUa1IysbCssTHHhvjCePXmKzvOdCr7AIBPwI41ECYSoEsHGxgdh0xN1dei51IMEte7mjUF1IZThOT9TYSvLy6QuEm0e/jrE6N1RFAoFfP+2J7wwNDQMt9stuTPd6oUT1PkuSGBKfQ1kbzLODpqbHTh+7GhNcbbufw9IL6g2KmOo7spuMcSq8mx7vuaCuNJA+uIfurIzt19ASrYAAAAASUVORK5CYII=" rel="shortcut icon"><link href=https://tsai002.github.io//atom.xml rel=alternate title=Ciao! type=application/atom+xml><meta content="width=device-width,initial-scale=1,user-scalable=no" name=viewport><body><div class=blogpost><a href=/>← Home</a><h2 class=post-title>用R语言进行地震数据可视化</h2><p>看到前辈大神的 <a href=http://xccds1977.blogspot.com/2012/06/ggmap.html>用ggmap包进行地震数据的可视化</a> 教程，拿来练个手<sup class=footnote-reference><a href=#1>1</a></sup> <sup class=footnote-reference><a href=#2>2</a></sup>。<p>数据直接从 <a href=https://tsai002.github.io/earthquake/data.earthquake.cn/data/index.jsp>中国地震台网统一地震目录</a> 抓取。<pre class=language-r data-lang=r style=background:#2b303b;color:#c0c5ce><code class=language-r data-lang=r><span style=color:#96b5b4>library</span><span>(XML)
+</span><span style=color:#96b5b4>library</span><span>(ggmap)
+</span><span style=color:#96b5b4>library</span><span>(animation)
+</span><span>
+</span><span style=color:#65737e>## 网页数据抓取和清理
+</span><span>Url &LT-"</span><span style=color:#a3be8c>http://data.earthquake.cn/datashare/globeEarthquake_csn.html</span><span>"
+</span><span>Data &LT- </span><span style=color:#bf616a>readHTMLTable</span><span>(Url, </span><span style=color:#bf616a>stringsAsFactors </span><span>= </span><span style=color:#d08770>FALSE</span><span>)
+</span><span>Data &LT- Data[[</span><span style=color:#d08770>6</span><span>]]
+</span><span>D &LT- Data[</span><span style=color:#96b5b4>c</span><span>(</span><span style=color:#d08770>1</span><span>,</span><span style=color:#d08770>3</span><span>,</span><span style=color:#d08770>4</span><span>,</span><span style=color:#d08770>6</span><span>)]
+</span><span>
+</span><span>D</span><span style=color:#b48ead>$</span><span>震级 &LT- </span><span style=color:#96b5b4>as.numeric</span><span>(</span><span style=color:#96b5b4>gsub</span><span>("</span><span style=color:#a3be8c>[a-zA-Z]</span><span>", "", D</span><span style=color:#b48ead>$</span><span>震级))
+</span><span>D[</span><span style=color:#d08770>2</span><span style=color:#b48ead>:</span><span style=color:#d08770>4</span><span>] &LT- </span><span style=color:#96b5b4>sapply</span><span>(D[</span><span style=color:#d08770>2</span><span style=color:#b48ead>:</span><span style=color:#d08770>4</span><span>], as.numeric)
+</span><span>D</span><span style=color:#b48ead>$</span><span>发震日期 &LT- </span><span style=color:#96b5b4>as.Date</span><span>(D</span><span style=color:#b48ead>$</span><span>发震日期,  "</span><span style=color:#a3be8c>%Y-%m-%d</span><span>")
+</span><span>
+</span><span style=color:#96b5b4>names</span><span>(D) &LT- </span><span style=color:#96b5b4>c</span><span>("</span><span style=color:#a3be8c>Date</span><span>", "</span><span style=color:#a3be8c>Lat</span><span>", "</span><span style=color:#a3be8c>Lon</span><span>", "</span><span style=color:#a3be8c>Level</span><span>")
+</span><span>
+</span><span>D1 &LT- D[D</span><span style=color:#b48ead>$</span><span>Date < </span><span style=color:#96b5b4>Sys.Date</span><span>()-</span><span style=color:#d08770>1</span><span>,]
+</span><span>
+</span><span style=color:#65737e>## 画图
+</span><span style=color:#65737e>### 因为 Google map api 不能使用，只好手动加载背景图。
+</span><span>
+</span><span style=color:#65737e>### 中国的经纬度信息
+</span><span>China &LT- </span><span style=color:#96b5b4>c</span><span>(</span><span style=color:#bf616a>left </span><span>= </span><span style=color:#d08770>73</span><span>, </span><span style=color:#bf616a>bottom </span><span>= </span><span style=color:#d08770>17</span><span>, </span><span style=color:#bf616a>right </span><span>= </span><span style=color:#d08770>135</span><span>, </span><span style=color:#bf616a>top </span><span>= </span><span style=color:#d08770>50</span><span>)
+</span><span>Map &LT- </span><span style=color:#bf616a>get_stamenmap</span><span>(China, </span><span style=color:#bf616a>zoom </span><span>= </span><span style=color:#d08770>6</span><span>, </span><span style=color:#bf616a>maptype </span><span>= "</span><span style=color:#a3be8c>toner-lite</span><span>")
+</span><span>
+</span><span style=color:#8fa1b3>Day_Plot </span><span>&LT- </span><span style=color:#b48ead>function</span><span>(</span><span style=color:#bf616a>x</span><span>){
+</span><span>  D2 &LT- </span><span style=color:#96b5b4>subset</span><span>(D1, Date == x)
+</span><span>  </span><span style=color:#bf616a>ggmap</span><span>(Map, </span><span style=color:#bf616a>extent </span><span>= "</span><span style=color:#a3be8c>device</span><span>") +
+</span><span>    </span><span style=color:#bf616a>geom_point</span><span>(</span><span style=color:#bf616a>data </span><span>= D2, </span><span style=color:#bf616a>aes</span><span>(</span><span style=color:#bf616a>x </span><span>= Lon, </span><span style=color:#bf616a>y </span><span>= Lat), </span><span style=color:#bf616a>color </span><span>= "</span><span style=color:#a3be8c>red</span><span>", </span><span style=color:#bf616a>size </span><span>= D2</span><span style=color:#b48ead>$</span><span>Level, </span><span style=color:#bf616a>alpha </span><span>= </span><span style=color:#d08770>0.4</span><span>) +
+</span><span>    </span><span style=color:#bf616a>labs</span><span>(</span><span style=color:#bf616a>title </span><span>= "</span><span style=color:#a3be8c>as.Date(x, origin = </span><span>"</span><span style=color:#d08770>1970</span><span>-</span><span style=color:#d08770>01</span><span>-</span><span style=color:#d08770>01</span><span>"</span><span style=color:#a3be8c>))
+</span><span style=color:#a3be8c>}
+</span><span style=color:#a3be8c>
+</span><span style=color:#a3be8c>Time &LT- sort(unique(D1$Date))
+</span><span style=color:#a3be8c>saveGIF(for( i in Time) print(Day_Plot(i)))
+</span><span style=color:#a3be8c>
+</span></code></pre><p><img alt=animation.gif src=https://i.loli.net/2018/04/30/5ae69199344c5.gif><h4 id=can-kao-zi-liao>参考资料</h4><div class=footnote-definition id=1><sup class=footnote-definition-label>1</sup><p><a href=http://xccds1977.blogspot.com/2012/06/ggmap.html>用ggmap包进行地震数据的可视化</a> <sup class=footnote-reference><a href=#2>2</a></sup>: <a href=https://github.com/dkahle/ggmap>GitHub: ggmap</a></div></div>
