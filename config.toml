@@ -6,4 +6,4 @@ feed_limit = 20
 
 [markdown]
 highlight_code = true
-highlight_theme = "base16-ocean-light"
+# highlight_theme = "base16-ocean-light"
