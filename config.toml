@@ -1,9 +1,11 @@
 base_url = "https://tsai002.github.io/"
 title = "Ciao!"
 minify_html = true
-generate_feed = true
+generate_feeds = true
 feed_limit = 20
 
 [markdown]
 highlight_code = true
+bottom_footnotes = true
+
 # highlight_theme = "base16-ocean-light"
