@@ -2,13 +2,40 @@ on: push
 name: Build and deploy on push
 jobs:
   build:
-    name: shalzz/zola-deploy-action
+    name: Zola
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: shalzz/zola-deploy-action
-      uses: shalzz/zola-deploy-action@master
-      env:
-        PAGES_BRANCH: gh-pages
-        BUILD_DIR: .
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - uses: taiki-e/install-action@v2
+      with:
+        tool: zola
+    - name: Build site
+      run: zola build
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        artifact-name: public
+
+  Deploy:
+    needs: build
+    name: Deploy to GitHub Pages
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: 'github-pages'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
