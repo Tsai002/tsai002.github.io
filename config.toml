@@ -8,4 +8,4 @@ feed_limit = 20
 highlight_code = true
 bottom_footnotes = true
 
-# highlight_theme = "base16-ocean-light"
+highlight_theme = "base16-ocean-light"
