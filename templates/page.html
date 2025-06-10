@@ -1,8 +1,7 @@
-{% extends "base.html" %}
-{% block content %}
-    <div class="blogpost typo">
-      <a href="/">&#8592; Home</a>
-      <h2 class="post-title">{{ page.title }}</h2>
-      {{ page.content | safe }}
-    </div>
+{% extends "base.html" %} {% block content %}
+<div class="typo">
+    <a href="/">&#8592; Home</a>
+    <h2>{{ page.title }}</h2>
+    {{ page.content | safe }}
+</div>
 {% endblock content %}

@@ -1,26 +1,27 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
-  <div class="wrapper">
+<div class="typo">
     <header>
-      <br />
-      <h1>Ciao!</h1>
-      <br />
+        <br />
+        <h1>Ciao!</h1>
+        <br />
 
-      <p>“When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create.”</p>
-      <p>― Why The Lucky Stiff</p>
+        <p>
+            “When you don't create things, you become defined by your tastes
+            rather than ability. Your tastes only narrow & exclude people. So
+            create.”
+        </p>
+        <p>― Why The Lucky Stiff</p>
     </header>
 
     <section>
-
-          <br>
-        {% for page in section.pages %}
-          {{ page.date | date(format="%Y-%m-%d") }}<br>
-          <a href="{{ page.permalink | safe }}">{{ page.title }}</a><br>
-          <br>
+        <br />
+        {% for page in section.pages %} {{ page.date | date(format="%Y-%m-%d")
+        }}<br />
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a><br />
+        <br />
         {% endfor %}
-
     </section>
-  </div>
+</div>
 
 {% endblock content %}
