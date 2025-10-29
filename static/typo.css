@@ -253,6 +253,12 @@ pre tt {
     font-family: Courier, "Courier New", monospace;
 }
 
+p code, ul code, ol code {
+    color: #da1039;
+    background-color:#f5f5f5;
+    padding: .25em;
+}
+
 pre {
     background: #f8f8f8;
     border: 1px solid #ddd;
