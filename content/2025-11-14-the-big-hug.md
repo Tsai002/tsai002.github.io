@@ -1,8 +1,6 @@
 +++
-title = "[WIP] 郭達年《抱靈賦》歌詞"
+title = "郭達年《抱靈賦》歌詞"
 +++
-
-https://thebighug.wordpress.com/
 
 [![郭達年《抱靈賦》](/imgs/hug/01.webp)](https://youtube.com/playlist?list=PLXZXsujBg9-Gwq0LO9686QCf1IwFNxONx)
 
@@ -119,8 +117,7 @@ Everybody knows.
 
 另一個現場版本 <https://www.youtube.com/watch?v=s05KajsIsNA>。郭達年在 MC 時提到的另一首歌是 Crass [Do They Owe Us a Living?](https://genius.com/Crass-do-they-owe-us-a-living-lyrics)
 
-這首歌由三首歌組成，分別是：
-
+Occupy 由三首歌組成，分別是：
 1. Ani DiFranco - [Binary](https://genius.com/Ani-difranco-binary-lyrics)
 2. Mahalia Jackson - [Trouble of the World](https://genius.com/Mahalia-jackson-trouble-of-the-world-lyrics)
 3. Rising Appalachia- [https://genius.com/Rising-appalachia-occupy-lyrics](Occupy)
@@ -286,3 +283,393 @@ politik is violence
 Politik mani, Politik man
 
 ### 6. [We Ride Against Uranium](https://youtu.be/lQrMAnByLFY)
+
+<!-- 我們都只是土地上
+經過的人
+我們都會死
+請用靜態的心，感恩
+
+You leaders of the nation
+Where do you lead too say? -->
+
+### 7. [We shall not be moved](https://youtu.be/lELCfhN8JuA)
+
+改編自十九世紀的美國黑人 [靈歌](https://genius.com/Pete-seeger-we-shall-not-be-moved-lyrics
+)，該歌曲在美國民權運動中被 [廣泛](https://en.wikipedia.org/wiki/I_Shall_Not_Be_Moved) 使用。
+
+We shall not, we shall not be moved\
+We shall not, we shall not be moved\
+Just like a tree living by the river\
+We shall not be moved
+
+我，不會，不會退一步\
+我，不會，不會退一步\
+像那大樹，扎根在河堤上\
+不會退一步
+
+We stand by our children\
+We shall not be moved\
+We stand by our children\
+We shall not be moved\
+Just like a tree living by the river\
+We shall not be moved
+
+為了孩子的未來\
+不要退一步\
+為了孩子的未來\
+不要退一步\
+像那大樹，扎根在河堤上\
+不要退一步
+
+We stand for our freedom\
+We shall not be moved\
+We stand for our freedom\
+We shall not be moved\
+Just like a tree living by the river\
+We shall not be moved
+
+捍衛我們的自由\
+不可退一步\
+捍衛我們的自由\
+不可退一步\
+像那大樹，扎根在河堤上\
+不可退一步
+
+Just like a tree that's living by the river\
+We shall not be moved
+
+### 8. [I ain't got no home anymore, Which side are you on？](https://youtu.be/0931AvbT2YI)
+
+由 Woody Guthrie（電影《搖滾詩人》中躺床上那位） 和 Pete Seeger（電影《搖滾詩人》中爱德华·诺顿飾演的） 的兩首經典歌曲融合而成。
+
+* [Woody Guthrie - I Ain't Got No Home](https://woodyguthrie.org/Lyrics/I_Aint_Got_No_Home.htm)
+* [Pete Seeger - Which Side Are You On?](https://genius.com/Pete-seeger-which-side-are-you-on-lyrics)
+
+I ain't got no home, I'm just a-roamin' 'round\
+I'm just a daily toiler, roaming from town to town\
+Police make it hard, wherever I may go\
+I ain't got no home in this place anymore. 
+
+Which side are you on, now?\
+Which side are you on?\
+Which side are you on, now?\
+Which side are you on?
+
+Must I remind my brother\
+Who's stranded on this road\
+A dusty barren road millions feet have trod\
+The rich man took my home\
+And drove me from my door\
+And I ain't got no home in this place anymore
+
+Which side are you on, now?\
+Which side are you on?\
+Which side are you on, now?\
+Which side are you on?
+
+I've got my little family, my wife and darling child\
+I just want a labor and earn them a decent life\
+But the boss has made it hard\
+For every dollar that he got\
+And I ain't got no home in this place anymore
+
+Which side are you on, now?\
+Which side are you on?\
+Which side are you on, now?\
+Which side are you on?
+
+My mother and my father\
+Have long gone passed in time\
+A stripped and bare livelihood borne by millions alive\
+The government took our land\
+To build their paradise\
+And we ain't got no home in this place anymore
+
+Which side are you on, now?\
+Which side are you on?\
+Which side are you on, now?\
+Which side are you on?\
+Which side are you on, now?\
+Which side are you on?\
+Which side are you on, now?\
+Which side are you on?
+
+### 9. [Know Your Enemy](https://youtu.be/y6vDruKji-Q)
+
+和平主義者 Christopher Logue 的詩作 [Know Your Enemy](https://www.wussu.com/poems/clkte.htm)，郭達年作曲。
+
+he doesn‘t care what colour you are\
+provided you work for him\
+he doesn‘t care how much you earn\
+provided you earn more for him\
+he doesn‘t care who lives at the top\
+provided he owns the building\
+he will let you write against him\
+provided you do not act against him
+
+he sings the praises of humanity\
+but knows machines cost more than men\
+Bargain with him, he laughs, and beats you at it\
+challenge him, and he kills\
+Sooner than loose the things he owns\
+he will destroy the world\
+SMASH The MONSTER NOW!
+
+But as you hasten to be free\
+And build your commonwealth\
+Do not forget the enemy\
+Who lies within yourself
+
+KNOW THY ENEMY!\
+KNOW THY ENEMY!\
+KNOW THY ENEMY!\
+KNOW THY ENEMY!
+
+### 10. [Come on in my Kitchen](https://youtu.be/8nR1PL0qTn8)
+
+Robert Johnson 的 [藍調歌曲](https://genius.com/Robert-johnson-come-on-in-my-kitchen-take-1-lyrics
+)。
+
+So love is gone\
+Fool around is no more\
+Get on with your living\
+Don't get floored\
+You better come on into my kitchen\
+It's gonna be raining outdoors
+
+The bus shall fly\
+Our dreams survive\
+We are in no hope\
+Don't get drowned\
+You better come on into my kitchen\
+It's gonna to be raining outdoors
+
+Our seed grow strong\
+In trust we bond\
+Move on from the battle\
+Don't get frowned\
+You better come on into my kitchen\
+It's gonna be raining outdoors
+
+So winter is here\
+It's gonna be slow\
+We can't take the loser really\
+That breaks our soul\
+You better come on into my kitchen\
+It's gonna be raining outdoors
+
+So love is gone\
+Fool around is no more\
+Get on with your living\
+Don't get floored\
+You better come on into my kitchen\
+It's gonna be raining outdoors
+
+### 11. [我咽下一枚鐵做的月亮](https://youtu.be/F1R3N4cQu04)
+
+[許立志](https://zh.wikipedia.org/zh-tw/%E8%AE%B8%E7%AB%8B%E5%BF%97) 的詩作《我咽下一枚鐵做的月亮》，郭達年作曲。
+
+我咽下一枚鐵做的月亮\
+他們把它叫作螺絲\
+我咽下這工業的廢水，失業的訂單\
+那些低於機台的青春早早夭亡\
+我咽下奔波，咽下流離失所\
+咽下人行天橋，咽下長滿水鏽的生活
+
+我再咽不下了\
+所有我曾經咽下的現在\
+都從喉嚨洶湧而出\
+在祖國的領土上鋪成一首\
+恥辱的詩
+
+### 12. [Universal Soldier](https://youtu.be/moh3bhX1xhc)
+
+反戰歌曲 [Universal Soldier](https://genius.com/Donovan-universal-soldier-lyrics)，歌詞由少許改變。
+
+He's five foot-two, and he's six feet-four\
+He fights with missiles and with spears\
+He's all of thirty-one\
+And he's only seventeen\
+He's been a soldier for a thousand years
+
+He's a Catholic, a Hindu, an atheist, a Jain\
+A Buddhist and a Baptist and a Jew\
+And he knows he shouldn't kill\
+And he knows he always will\
+Kill you for me, my friend, and me for you
+
+And he's fighting for **Palestine**\
+He's fighting for **Israle**\
+He's fighting for the **USA**\
+And he's fighting for **Afghanistan**\
+And he's fighting for **Iraq**\
+And he thinks we'll put an end to war this way
+
+And he's fighting for democracy, he's fighting for the reds\
+He says it's for the peace of us all\
+He's the one who must decide\
+Who's to live and who's to die\
+And he never sees the writing on the wall\
+
+But without him how would Hitler have condemned him at Libau?\
+Without him Caesar would have stood alone\
+He's the one who gives his body\
+As a weapon of the war\
+And without him all this killin' can't go on
+
+He's the universal soldier, and he really is to blame\
+His orders come from far away no more\
+They come from here and there and you and me\
+Sisters brothers can't you see\
+This is not the way we put the end to war?
+
+Unisversal soldier, he really is to blame\
+His orders come from far away no more\
+They come from here and there and you and me\
+Sisters brothers can't you see\
+This is not the way we put the end to war?
+
+STOP TAKING LIVES!\
+TAKE CARE OF CHILDREN!\
+停止生命殺害生命\
+照顧好我們的孩子
+
+### 13. [East is dark](https://youtu.be/6a_U_nUznIc)
+
+<!-- The east is dark\
+Dog starts to bark\
+It's time to come along with\
+
+Time to get up\ -->
+
+### 14. [Bella Ciao](https://youtu.be/nr0xh54enUg)
+
+經典抵抗歌曲 [Bella Ciao](https://zh.wikipedia.org/wiki/%E5%95%8A%EF%BC%8C%E5%A7%91%E5%A8%98%E5%86%8D%E8%A6%8B)。
+
+Una mattina mi sono alzato\
+O bella ciao, bella ciao, bella ciao, ciao, ciao\
+Una mattina mi sono alzato\
+E ho trovato l'invasor
+
+The east is red\
+I'm awaken,\
+Bella Ciao, Bella Ciao, Bella Ciao, Ciao\
+The east is red now\
+I'm awaken\
+I see my liberty right all day
+
+東方紅啦\
+我已醒來\
+Bella Ciao, Bella Ciao, Bella Ciao, Ciao\
+東方紅啦\
+我已醒來\
+清楚看見那新世界
+
+東方黑了\
+時候已到\
+Bella Ciao, Bella Ciao, Bella Ciao, Ciao\
+東方黑了\
+時候已到\
+我們砍破這爛囚牢！
+
+The east is dark now\
+I'm awaken\
+Bella Ciao, Bella Ciao, Bella Ciao, Ciao\
+The east is dark now\
+I'm a ready\
+I'm gonna taken back my freedom now
+
+Una mattina mi sono alzato\
+O bella ciao, bella ciao, bella ciao, ciao, ciao\
+Una mattina mi sono alzato\
+E ho trovato l'invasor
+
+### 15. [Free the People NOW!](https://youtu.be/d7v4inzIluw)
+
+約翰·藍儂的 [Bring on the Lucie (Freda Peeple)](https://genius.com/John-lennon-bring-on-the-lucie-freda-peeple-lyrics)
+
+We don't care what flag you're waving\
+We don't even wanna know your name\
+We don't care where you're from or where you're going\
+All we know is that you came
+
+You're making all our decisions\
+We have just one demand of you\
+You better go and think it over\
+Here's something you just ought to do
+
+Free the people now (do it, right now)\
+Free the people now (do it, right now)
+
+Well, we were caught with our hands in the air\
+Don't despair, paranoia's everywhere\
+We can shake it with love when we're scared\
+So let's shout it aloud like a prayer
+
+Free the people now (do it, right now)\
+Free the people now (do it, right now)
+
+We see through your paranoia\
+But we don't want to play your game\
+You think you're cool and know what you are doing\
+666 is your name
+
+So while you're jerking off each other\
+You better bear this thought in mind\
+Your time is up, you better know it\
+But maybe you don't read the signs
+
+Free the people now (do it, right now)\
+Free the people now (do it, right now)
+
+Well, you were caught with your hands in the kill\
+And you still got to swallow your pill\
+As you slip and you slide down the hill\
+On the blood of the people you killed
+
+Free the people now (do it, right now)\
+Free the people now (do it, right now)
+
+### 16. [A las Barricadas](https://youtu.be/C2u2VJEjt88)
+
+[路障戰歌](https://www.marxists.org/subject/art/music/lyrics/es/a-las-barricadas.htm)
+
+Negras tormentas agitan los aires\
+nubes oscuras nos impiden ver\
+aunque nos espere el dolor y la muerte\
+contra el enemigo nos llama el deber
+
+El bien más preciado es la libertad\
+hay que defenderla con fe y valor
+
+Alza la bandera revolucionaria\
+que del triunfo sin cesar nos lleva en pos\
+Alza la bandera revolucionaria\
+que del triunfo sin cesar nos lleva en pos
+
+大地騰起\
+民聲鼎沸\
+黑旗飄揚\
+生命\
+理想
+
+我們都在路上\
+一起同行\
+安那其啊\
+同志們
+
+那心中的憧憬\
+生活中的鬥爭\
+從來沒有\
+因為歲月\
+而離棄
+
+路上我們一起\
+相互激勵\
+安那其啊\
+一直存在
+
+Alza la bandera revolucionaria\
+que del triunfo sin cesar nos lleva en pos\
+Alza la bandera revolucionaria\
+que del triunfo sin cesar nos lleva en pos
