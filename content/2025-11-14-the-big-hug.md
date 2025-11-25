@@ -8,6 +8,8 @@ title = "郭達年《抱靈賦》歌詞"
 
 這首歌由二戰期間法國抵抗運動者 [Anna Marly](https://en.wikipedia.org/wiki/Anna_Marly) 作曲，[Emmanuel d'Astier de La Vigerie](https://en.wikipedia.org/wiki/Emmanuel_d%27Astier_de_La_Vigerie) 作詞。[柯恩](https://zh.wikipedia.org/zh-tw/%E9%87%8C%E5%A5%A5%E7%BA%B3%E5%BE%B7%C2%B7%E7%A7%91%E6%81%A9) 的翻唱使其廣為人知，而郭達年的版本在 [歌詞](https://genius.com/Leonard-cohen-the-partisan-lyrics) 上去掉了法語內容，細節上略有不同。
 
+<blockquote>
+
 When they poured across the border\
 I was cautioned to surrender\
 **For that** I could not do\
@@ -37,9 +39,13 @@ When they poured across the border\
 I was cautioned to surrender\
 **For that** I could not do
 
+</blockquote>
+
 ### 2. [New Stanzas for Amazing Grace](https://youtu.be/ZqtmsdQxaTw)
 
 [艾倫·金斯堡](https://zh.wikipedia.org/zh-tw/%E8%89%BE%E4%BC%A6%C2%B7%E9%87%91%E6%96%AF%E5%A0%A1) 改編自著名宗教曲目 Amazing Grace，因此被稱為 [New Stanzas for Amazing Grace](https://www.poetryverse.com/allen-ginsberg-poems/new-stanzas-for-amazing-grace)
+
+<blockquote>
 
 I dreamed I dwelled in a homeless place\
 Where I was lost alone\
@@ -64,9 +70,13 @@ Receive amazing grace
 The homeless ones where you may walk\
 Receive amazing grace
 
+</blockquote>
+
 ### 3. [Everybody knows](https://youtu.be/xZkA3ku5ypI)
 
 翻唱自柯恩的 Everybody knows，歌詞有 [修改](https://genius.com/Leonard-cohen-everybody-knows-lyrics)。
+
+<blockquote>
 
 Everybody knows what is wrong\
 Everybody knows what is right\
@@ -113,14 +123,19 @@ Or else we’re gonna fight each other\
 That’s what we all know\
 Everybody knows.
 
+</blockquote>
+
 ### 4. [Occupy](https://youtu.be/Bldy-FMA-YA)
 
 另一個現場版本 <https://www.youtube.com/watch?v=s05KajsIsNA>。郭達年在 MC 時提到的另一首歌是 Crass [Do They Owe Us a Living?](https://genius.com/Crass-do-they-owe-us-a-living-lyrics)
 
 Occupy 由三首歌組成，分別是：
+
 1. Ani DiFranco - [Binary](https://genius.com/Ani-difranco-binary-lyrics)
 2. Mahalia Jackson - [Trouble of the World](https://genius.com/Mahalia-jackson-trouble-of-the-world-lyrics)
 3. Rising Appalachia- [https://genius.com/Rising-appalachia-occupy-lyrics](Occupy)
+
+<blockquote>
 
 Where are my brothers\
 Where are my sisters\
@@ -220,9 +235,13 @@ Where are my sisters\
 Where are my brothers\
 Where is the family that take care of each other
 
+</blockquote>
+
 ### 5. [Politik Kills](https://youtu.be/UXPd4hCN5zk)
 
 翻唱自 [Manu Chao](https://genius.com/Manu-chao-politik-kills-lyrics)
+
+<blockquote>
 
 Politik mani, Politik man\
 Politik mani, Politik man\
@@ -282,6 +301,8 @@ politik is violence
 
 Politik mani, Politik man
 
+</blockquote>
+
 ### 6. [We Ride Against Uranium](https://youtu.be/lQrMAnByLFY)
 
 <!-- 我們都只是土地上
@@ -294,8 +315,9 @@ Where do you lead too say? -->
 
 ### 7. [We shall not be moved](https://youtu.be/lELCfhN8JuA)
 
-改編自十九世紀的美國黑人 [靈歌](https://genius.com/Pete-seeger-we-shall-not-be-moved-lyrics
-)，該歌曲在美國民權運動中被 [廣泛](https://en.wikipedia.org/wiki/I_Shall_Not_Be_Moved) 使用。
+改編自十九世紀的美國黑人 [靈歌](https://genius.com/Pete-seeger-we-shall-not-be-moved-lyrics)，該歌曲在美國民權運動中被 [廣泛](https://en.wikipedia.org/wiki/I_Shall_Not_Be_Moved) 使用。
+
+<blockquote>
 
 We shall not, we shall not be moved\
 We shall not, we shall not be moved\
@@ -338,17 +360,21 @@ We shall not be moved
 Just like a tree that's living by the river\
 We shall not be moved
 
+</blockquote>
+
 ### 8. [I ain't got no home anymore, Which side are you on？](https://youtu.be/0931AvbT2YI)
 
 由 Woody Guthrie（電影《搖滾詩人》中躺床上那位） 和 Pete Seeger（電影《搖滾詩人》中爱德华·诺顿飾演的） 的兩首經典歌曲融合而成。
 
-* [Woody Guthrie - I Ain't Got No Home](https://woodyguthrie.org/Lyrics/I_Aint_Got_No_Home.htm)
-* [Pete Seeger - Which Side Are You On?](https://genius.com/Pete-seeger-which-side-are-you-on-lyrics)
+- [Woody Guthrie - I Ain't Got No Home](https://woodyguthrie.org/Lyrics/I_Aint_Got_No_Home.htm)
+- [Pete Seeger - Which Side Are You On?](https://genius.com/Pete-seeger-which-side-are-you-on-lyrics)
+
+<blockquote>
 
 I ain't got no home, I'm just a-roamin' 'round\
 I'm just a daily toiler, roaming from town to town\
 Police make it hard, wherever I may go\
-I ain't got no home in this place anymore. 
+I ain't got no home in this place anymore.
 
 Which side are you on, now?\
 Which side are you on?\
@@ -394,9 +420,13 @@ Which side are you on?\
 Which side are you on, now?\
 Which side are you on?
 
+</blockquote>
+
 ### 9. [Know Your Enemy](https://youtu.be/y6vDruKji-Q)
 
 和平主義者 Christopher Logue 的詩作 [Know Your Enemy](https://www.wussu.com/poems/clkte.htm)，郭達年作曲。
+
+<blockquote>
 
 he doesn‘t care what colour you are\
 provided you work for him\
@@ -425,10 +455,13 @@ KNOW THY ENEMY!\
 KNOW THY ENEMY!\
 KNOW THY ENEMY!
 
+</blockquote>
+
 ### 10. [Come on in my Kitchen](https://youtu.be/8nR1PL0qTn8)
 
-Robert Johnson 的 [藍調歌曲](https://genius.com/Robert-johnson-come-on-in-my-kitchen-take-1-lyrics
-)。
+Robert Johnson 的 [藍調歌曲](https://genius.com/Robert-johnson-come-on-in-my-kitchen-take-1-lyrics)。
+
+<blockquote>
 
 So love is gone\
 Fool around is no more\
@@ -465,9 +498,13 @@ Don't get floored\
 You better come on into my kitchen\
 It's gonna be raining outdoors
 
+</blockquote>
+
 ### 11. [我咽下一枚鐵做的月亮](https://youtu.be/F1R3N4cQu04)
 
 [許立志](https://zh.wikipedia.org/zh-tw/%E8%AE%B8%E7%AB%8B%E5%BF%97) 的詩作《我咽下一枚鐵做的月亮》，郭達年作曲。
+
+<blockquote>
 
 我咽下一枚鐵做的月亮\
 他們把它叫作螺絲\
@@ -482,9 +519,13 @@ It's gonna be raining outdoors
 在祖國的領土上鋪成一首\
 恥辱的詩
 
+</blockquote>
+
 ### 12. [Universal Soldier](https://youtu.be/moh3bhX1xhc)
 
 反戰歌曲 [Universal Soldier](https://genius.com/Donovan-universal-soldier-lyrics)，歌詞由少許改變。
+
+<blockquote>
 
 He's five foot-two, and he's six feet-four\
 He fights with missiles and with spears\
@@ -534,6 +575,8 @@ TAKE CARE OF CHILDREN!\
 停止生命殺害生命\
 照顧好我們的孩子
 
+</blockquote>
+
 ### 13. [East is dark](https://youtu.be/6a_U_nUznIc)
 
 <!-- The east is dark\
@@ -545,6 +588,8 @@ Time to get up\ -->
 ### 14. [Bella Ciao](https://youtu.be/nr0xh54enUg)
 
 經典抵抗歌曲 [Bella Ciao](https://zh.wikipedia.org/wiki/%E5%95%8A%EF%BC%8C%E5%A7%91%E5%A8%98%E5%86%8D%E8%A6%8B)。
+
+<blockquote>
 
 Una mattina mi sono alzato\
 O bella ciao, bella ciao, bella ciao, ciao, ciao\
@@ -584,9 +629,13 @@ O bella ciao, bella ciao, bella ciao, ciao, ciao\
 Una mattina mi sono alzato\
 E ho trovato l'invasor
 
+</blockquote>
+
 ### 15. [Free the People NOW!](https://youtu.be/d7v4inzIluw)
 
 約翰·藍儂的 [Bring on the Lucie (Freda Peeple)](https://genius.com/John-lennon-bring-on-the-lucie-freda-peeple-lyrics)
+
+<blockquote>
 
 We don't care what flag you're waving\
 We don't even wanna know your name\
@@ -630,9 +679,13 @@ On the blood of the people you killed
 Free the people now (do it, right now)\
 Free the people now (do it, right now)
 
+</blockquote>
+
 ### 16. [A las Barricadas](https://youtu.be/C2u2VJEjt88)
 
 [路障戰歌](https://www.marxists.org/subject/art/music/lyrics/es/a-las-barricadas.htm)
+
+<blockquote>
 
 Negras tormentas agitan los aires\
 nubes oscuras nos impiden ver\
@@ -673,3 +726,5 @@ Alza la bandera revolucionaria\
 que del triunfo sin cesar nos lleva en pos\
 Alza la bandera revolucionaria\
 que del triunfo sin cesar nos lleva en pos
+
+</blockquote>

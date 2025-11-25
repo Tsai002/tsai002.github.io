@@ -112,20 +112,14 @@ table {
 fieldset,
 img {
     border: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 540px;
 }
 
 /* 块/段落引用 */
 blockquote {
     position: relative;
-    color: #999;
     font-weight: 400;
-    border-left: 1px solid #1abc9c;
-    padding-left: 1em;
-    margin: 1em 3em 1em 2em;
+    padding: 1em 1em 0.1em 1em;
+    background-color: hsla(0deg, 0%, 0%, 0.054);
 }
 
 @media only screen and (max-width: 640px) {
@@ -212,13 +206,13 @@ a:hover {
 }
 
 .typo a {
-    border-bottom: 1px solid #1abc9c;
+    border-bottom: #1abc9c;
 }
 
 .typo a:hover {
     border-bottom-color: #555;
     color: #555;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* 默认不显示下划线，保持页面简洁 */
@@ -253,18 +247,12 @@ pre tt {
     font-family: Courier, "Courier New", monospace;
 }
 
-p code, ul code, ol code {
-    color: #da1039;
-    background-color:#f5f5f5;
-    padding: .25em;
-}
-
 pre {
     background: #f8f8f8;
     border: 1px solid #ddd;
     padding: 1em 1.5em;
     display: block;
-    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* 一致化 horizontal rule */
@@ -281,7 +269,6 @@ small, .typo-small,
 figcaption {
     font-size: 0.9em;
     color: #888;
-    text-align: center;
 }
 
 strong,
@@ -362,7 +349,7 @@ h6 {
         Microsoft Sans Serif,
         WenQuanYi Micro Hei,
         sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     color: #000;
     line-height: 1.35;
 }
@@ -499,26 +486,4 @@ caption {
 /* Responsive images */
 .typo img {
     max-width: 100%;
-}
-
-/* layout */
-body {
-    display: grid;
-    grid-template-columns: 1fr min(45rem, 90%) 1fr;
-}
-
-body > * {
-    grid-column: 2;
-}
-
-body > header {
-    grid-column: 1/-1;
-}
-
-body > header h1 {
-    margin: 1rem auto;
-}
-
-body > header p {
-    max-width: 40rem;
 }

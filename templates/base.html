@@ -1,37 +1,61 @@
 <!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ config.title }}</title>
+        <link rel="stylesheet" href="{{ get_url(path="typo.css", trailing_slash=false) }}">
+        <link rel="stylesheet" href="{{ get_url(path="base.css", trailing_slash=false) }}">
+        <link
+            rel="shortcut icon"
+            href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACjUlEQVQ4T0VTTU9TQRQ9r61RkY1SEqFBFyAN6UcQWsUmNTUqDQE0Kh+GdictG4SnbGwTWZSFuuui/ARRFLSuEQhxKW4kQZsuQCFVdriwbWp8z3tnpnXy3mTevDv3nnPuGc0wDFPTNPAw6dVoNnkh1rRPj/ikTdMwUKn8Ef/+0tp2xAbNNEwRLw7SXPhRwPLSEtpa23Dhoh8N9kaVVCYr/i5ie3sbPp+PvukEZeVzosyLxZeYiMWh6zo6XC6USyVYrRZoFgtVruDg5wFyuRwy8/Oor68XqDSDIMDUsL+/B6ezHSdPNSAUCqHRbseb5WX09oYRCARQKpextr4KV4cLY5ExinUSAiJpCg4a0uk0FhaeI5Waw+anj9j6vIWVlffo7urC8MgI+vv7kM1m8WrxNVbX12CzWgXwGoKZmYfweDwIBoPEv1WoouvTGBgYxLXrV7G7s4tkMolMJiNQsmZCaEbAFGZnH+NebBxnWs7Wfk5NTyESjaLpdBPy+TxRuyI0kW2SomqkoUiVffcW/m4/HC2OqqaYiMcxOXkfXq9X9ogKqbLV+oyAB1AqFon7JlG4LDJzRGx8HPoDHS7qiNyqzkRAxdQocE+/fM3Bea4dFoZJIxKJIpF4BJdbJpB+YnsxHsWCfUBWZCgKnqzEQbdu38FcKqUQKLdSIVleAhUa1IysbCssTHHhvjCePXmKzvOdCr7AIBPwI41ECYSoEsHGxgdh0xN1dei51IMEte7mjUF1IZThOT9TYSvLy6QuEm0e/jrE6N1RFAoFfP+2J7wwNDQMt9stuTPd6oUT1PkuSGBKfQ1kbzLODpqbHTh+7GhNcbbufw9IL6g2KmOo7spuMcSq8mx7vuaCuNJA+uIfurIzt19ASrYAAAAASUVORK5CYII="
+        />
+        <link
+            rel="alternate"
+            type="application/atom+xml"
+            title="Ciao!"
+            href="{{ config.base_url }}/atom.xml"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+        />
 
-<head>
-  <meta charset="utf-8">
-  <title>{{ config.title }}</title>
-  <link rel="stylesheet" href="{{ get_url(path="typo.css", trailing_slash=false) }}">
-  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACjUlEQVQ4T0VTTU9TQRQ9r61RkY1SEqFBFyAN6UcQWsUmNTUqDQE0Kh+GdictG4SnbGwTWZSFuuui/ARRFLSuEQhxKW4kQZsuQCFVdriwbWp8z3tnpnXy3mTevDv3nnPuGc0wDFPTNPAw6dVoNnkh1rRPj/ikTdMwUKn8Ef/+0tp2xAbNNEwRLw7SXPhRwPLSEtpa23Dhoh8N9kaVVCYr/i5ie3sbPp+PvukEZeVzosyLxZeYiMWh6zo6XC6USyVYrRZoFgtVruDg5wFyuRwy8/Oor68XqDSDIMDUsL+/B6ezHSdPNSAUCqHRbseb5WX09oYRCARQKpextr4KV4cLY5ExinUSAiJpCg4a0uk0FhaeI5Waw+anj9j6vIWVlffo7urC8MgI+vv7kM1m8WrxNVbX12CzWgXwGoKZmYfweDwIBoPEv1WoouvTGBgYxLXrV7G7s4tkMolMJiNQsmZCaEbAFGZnH+NebBxnWs7Wfk5NTyESjaLpdBPy+TxRuyI0kW2SomqkoUiVffcW/m4/HC2OqqaYiMcxOXkfXq9X9ogKqbLV+oyAB1AqFon7JlG4LDJzRGx8HPoDHS7qiNyqzkRAxdQocE+/fM3Bea4dFoZJIxKJIpF4BJdbJpB+YnsxHsWCfUBWZCgKnqzEQbdu38FcKqUQKLdSIVleAhUa1IysbCssTHHhvjCePXmKzvOdCr7AIBPwI41ECYSoEsHGxgdh0xN1dei51IMEte7mjUF1IZThOT9TYSvLy6QuEm0e/jrE6N1RFAoFfP+2J7wwNDQMt9stuTPd6oUT1PkuSGBKfQ1kbzLODpqbHTh+7GhNcbbufw9IL6g2KmOo7spuMcSq8mx7vuaCuNJA+uIfurIzt19ASrYAAAAASUVORK5CYII=">
-  <link rel="alternate" type="application/atom+xml" title="Ciao!" href="{{ config.base_url }}/atom.xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        {% if page.extra.latex %}
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css"
+            integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ"
+            crossorigin="anonymous"
+        />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"
+            integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js"
+            integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true },
+                    ],
+                    throwOnError: false,
+                });
+            });
+        </script>
+        {% endif %}
+    </head>
 
-  {% if page.extra.latex %}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
-  <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          renderMathInElement(document.body, {
-            delimiters: [
-                {left: '$$', right: '$$', display: true},
-                {left: '$', right: '$', display: false},
-                {left: '\\(', right: '\\)', display: false},
-                {left: '\\[', right: '\\]', display: true}
-            ],
-            throwOnError : false
-          });
-      });
-  </script>
-  {% endif %}
-
-</head>
-
-<body>
-    {% block content %} {% endblock %}
-</body>
-
+    <body>
+        {% block content %} {% endblock %}
+    </body>
 </html>

@@ -1,0 +1,43 @@
+/* layout */
+body {
+    display: grid;
+    grid-template-columns: 0.8fr min(45rem, 90%) 0.8fr;
+}
+
+body > * {
+    grid-column: 2;
+}
+
+body > header {
+    grid-column: 1/-1;
+}
+
+body > header h1 {
+    margin: 1rem auto;
+}
+
+body > header p {
+    max-width: 40rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre,
+code,
+pre tt {
+    font-family: Courier, "Courier New", monospace;
+}
+
+p code,
+ul code,
+ol code {
+    color: #da1039;
+    background-color: #f5f5f5;
+    padding: 0.25em;
+}
+
+p {
+    text-align: justify;
+}
