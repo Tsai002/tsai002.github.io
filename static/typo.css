@@ -252,7 +252,7 @@ pre {
     border: 1px solid #ddd;
     padding: 1em 1.5em;
     display: block;
-    -webkit-overflow-scrolling: touch;
+    overflow: auto;
 }
 
 /* 一致化 horizontal rule */
