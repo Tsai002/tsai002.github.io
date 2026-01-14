@@ -38,6 +38,8 @@ ol code {
     padding: 0.25em;
 }
 
-p {
+p,
+ul,
+ol {
     text-align: justify;
 }
