@@ -3,6 +3,7 @@ title = "Ciao!"
 minify_html = true
 generate_feeds = true
 feed_limit = 20
+generate_sitemap = true
 
 [markdown]
 bottom_footnotes = true
