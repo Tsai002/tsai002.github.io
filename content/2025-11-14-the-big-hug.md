@@ -4,6 +4,62 @@ title = "郭達年《抱靈賦》歌詞"
 
 [![郭達年《抱靈賦》](/imgs/hug/01.webp)](https://youtube.com/playlist?list=PLXZXsujBg9-Gwq0LO9686QCf1IwFNxONx)
 
+## Rejuvenation
+
+这一部分为 2026-01-20 补充
+
+<audio controls>
+  <source src="/Rejuvenation.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
+资料来源于微信公众号磊石兄弟 [巴诺点歌 | 黑鸟×宣言、重新开始](https://mp.weixin.qq.com/s/IwYlDkTXNaOpBmG8N0jQlw)
+
+曲｜詞：謝利・漢拿
+
+> [謝利・漢拿](https://en.wikipedia.org/wiki/Gerry_Hannah)，一位加拿大反核分子/樂手，因反核武器行動背叛入獄十年，在獄中灌錄了十多首他自己的歌，名為「來自地下的聲音」，「重新開始」是其中的一首歌，是我对謝利的一份敬意。—— 郭
+
+郭達年中譯 (1987)
+
+主唱｜結他：郭達年
+
+色士風：荷斯漢
+
+鋼琴：李敦祥　低音：啄式
+
+鼓：阿伯拉罕
+
+<blockquote>
+有把聲音在呼喚
+來自心坎深處
+不能把它抑止　或逃避
+是時候再去開始
+我定要不再躲起來
+去決定我的立向
+已太久低下頭　屈辱
+那抑壓　恐懼
+我要抖擻過來
+竭力站起來
+我從前漠视的
+看清在前
+
+沒用空是在泣嘆
+那已發生的悲劇
+當我們摇首嘶嗥　擺手
+權力便就勝利
+
+不能再去漠視
+我所見的一切
+世事總有對錯　黑白
+不要那花言巧語
+
+冰冷的牆
+怎能把我宰住
+在我的心坎又
+自由不死
+
+## 抱靈賦
+
 ### 1. [The Partisan](https://youtu.be/xZkA3ku5ypI)
 
 這首歌由二戰期間法國抵抗運動者 [Anna Marly](https://en.wikipedia.org/wiki/Anna_Marly) 作曲，[Emmanuel d'Astier de La Vigerie](https://en.wikipedia.org/wiki/Emmanuel_d%27Astier_de_La_Vigerie) 作詞。[柯恩](https://zh.wikipedia.org/zh-tw/%E9%87%8C%E5%A5%A5%E7%BA%B3%E5%BE%B7%C2%B7%E7%A7%91%E6%81%A9) 的翻唱使其廣為人知，而郭達年的版本在 [歌詞](https://genius.com/Leonard-cohen-the-partisan-lyrics) 上去掉了法語內容，細節上略有不同。
